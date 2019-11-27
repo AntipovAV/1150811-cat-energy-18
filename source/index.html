@@ -2,6 +2,16 @@
 <html lang="ru">
   <head><meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <style>
+      @font-face {
+      font-family: "Oswald";
+      src: url("../fonts/oswaldmedium.woff") format("woff"),
+           url("../fonts/oswaldmedium.woff2") format("woff2"),
+           url("../fonts/oswaldregular.woff") format("woff"),
+           url("../fonts/oswaldregular.woff2") format("woff2");
+    }
+    </style>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -32,9 +42,9 @@
         </div>
         <h1 class="intro__title">Функциональное питание для котов</h1>
         <p class="intro__text">Занялся собой? Займись котом!</p>
-        <a class="intro__link" href="form.html">Подобрать программу</a>
       </section>
       <section class="catalog">
+        <a class="catalog__link" href="form.html">Подобрать программу</a>
         <div class="catalog__item catalog__item--slim">
           <h2 class="catalog__title">Похудение</h2>
           <p class="catalog__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -70,11 +80,11 @@
           <dl class="example__parameters-weight">
             <dt>5 кг</dt>
             <dd>Снижение веса</dd>
-          </div>
+          </dl>
           <dl class="example__parameters-days">
             <dt>60 дней</dt>
             <dd>Затрачено времени</dd>
-          </div>
+          </dl>
         </div>
         <p class="example__text">Затраты на питание: 15 000 руб.</p>
         <img class="example__image" src="https://via.placeholder.com/150x150" alt="Кот">
