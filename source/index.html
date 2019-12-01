@@ -2,37 +2,29 @@
 <html lang="ru">
   <head><meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
-    <style>
-      @font-face {
-      font-family: "Oswald";
-      src: url("../fonts/oswaldmedium.woff") format("woff"),
-           url("../fonts/oswaldmedium.woff2") format("woff2"),
-           url("../fonts/oswaldregular.woff") format("woff"),
-           url("../fonts/oswaldregular.woff2") format("woff2");
-    }
-    </style>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="page-container">
     <header class="page-header">
-      <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="логотип Cat energy">
-      </a>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="логотип Cat energy">
+        </a>
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть и закрыть меню</span></button>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
@@ -43,16 +35,16 @@
         <h1 class="intro__title">Функциональное питание для котов</h1>
         <p class="intro__text">Занялся собой? Займись котом!</p>
       </section>
-      <section class="catalog">
-        <a class="catalog__link" href="form.html">Подобрать программу</a>
-        <div class="catalog__item catalog__item--slim">
-          <h2 class="catalog__title">Похудение</h2>
-          <p class="catalog__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+      <section class="catalogs">
+        <a class="catalogs__link" href="form.html">Подобрать программу</a>
+        <div class="catalogs__item catalog__item--slim">
+          <h2 class="catalogs__title">Похудение</h2>
+          <p class="catalogs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a href="#">Каталог slim</a>
         </div>
-        <div class="catalog__item catalog__item--pro">
-          <h2 class="catalog__title">Набор массы</h2>
-          <p class="catalog__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+        <div class="catalogs__item catalog__item--pro">
+          <h2 class="catalogs__title">Набор массы</h2>
+          <p class="catalogs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a href="#">Каталог pro</a>
         </div>
       </section>
@@ -126,5 +118,6 @@
         <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
       </div>
     </footer>
+    </div>
   </body>
 </html>
