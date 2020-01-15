@@ -1,5 +1,6 @@
 
 .intro {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,21 +12,54 @@
   background-color: @leaf;
 }
 
+.intro__image {
+  position: absolute;
+  top: 166px;
+  margin: 0 auto;
+  width: 280px;
+  height: 270px;
+  background-image: url(../img/index-can-mobile@1x.png);
+  background-repeat: no-repeat;
+
+}
+
 .intro__title {
+  padding-top: 3px;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
   text-align: center;
-  transform: translateY(2px);
 }
 
 .intro__text {
+  padding-top: 2px;
+  margin: 0;
   font-size: 14px;
   line-height: 14px;
   font-weight: 100;
   opacity: 0.9;
   color: #ffffff;
   text-transform: uppercase;
-  transform: translateY(-10px);
+}
+
+.intro__link {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 14px;
+  width: 280px;
+  line-height: 40px;
+  margin-top: 301px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: @leaf;
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    min-height: 840px;
+    width: 768px;
+  }
 }

@@ -32,13 +32,13 @@
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__parameters parameters">
           <label class="parameters__name">Имя:*
-            <input type="text" name="name" required>
+            <input type="text" name="name" value="барсик" required>
           </label>
-          <label class="parameters__weight">Вес(кг):*
-            <input type="number" name="weight" required>
+          <label class="parameters__weight">Вес (кг):*
+            <input type="number" name="weight" value="7" required>
           </label>
-          <label class="parameters__age">Возраст(лет):
-            <input type="number" name="age">
+          <label class="parameters__age">Возраст (лет):
+            <input type="number" name="age" value="7">
           </label>
         </div>
         <div class="form__radio radio">
@@ -63,20 +63,25 @@
         </div>
         <div class="form__contacts user-contacts">
           <h2 class="user-contacts__title">Контактные данные (владельца кота)</h2>
+          <div class="user-contacts__line"></div>
+          <div class="user-contacts__wrapper">
           <label class="user-contacts__mail">E-mail:*
-            <input type="email" name="email" required>
+            <input type="email" name="email" value="kuklachev@gmail.com" required>
           </label>
           <label class="user-contacts__phone">Телефон:*
-            <input type="tel" name="phone" required>
+            <input type="tel" name="phone" value="8 (960) 900-60-90" required>
           </label>
+          </div>
         </div>
         <div class="form__comment comment">
           <h2 class="comment__title">Комментарий</h2>
+          <div class="comment__line"></div>
           <textarea class="comment__field" name="comment">Расскажите обо всех повадках кота
           </textarea>
         </div>
         <div class="form__additionally additionally">
           <h2 class="additionally__title">Дополнительно</h2>
+          <div class="additionally__line"></div>
           <ul class="additionally__list">
             <li class="additionally__item">
               <input type="checkbox" class="additionally__input" name="additionally-item" id="sweetener" value="sweetener"  checked>
@@ -101,7 +106,7 @@
       </form>
       <section class="contacts contacts--gray">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__offer">Приглашаем к сотрудничеству диллеров</p>
+        <p class="contacts__offer">Приглашаем <br>к сотрудничеству дилеров!</p>
         <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </section>
       <section class="map">
@@ -162,7 +167,11 @@
         </ul>
       </div>
       <div class="page-footer__academy academy">
-        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+        <a class="academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+        <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
+          <path fill="#666666" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
+        </svg>
+        </a>
       </div>
     </footer>
   </body>

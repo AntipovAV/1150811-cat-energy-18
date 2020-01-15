@@ -1,12 +1,16 @@
 .additionally {
+  margin: 0;
+  padding-top: 28px;
   display: flex;
-  flex-direction: column;
-  width: 280px;
-  margin: 0 auto;
-
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+  width: 320px;
 }
 
 .additionally__title {
+  margin: 0;
+  padding-left: 20px;
   font-size: 24px;
   font-weight: normal;
   line-height: 24px;
@@ -14,12 +18,26 @@
   color: #111111;
 }
 
+.additionally__line {
+  display: block;
+  width: 136px;
+  height: 3px;
+  background-color: @leaf;
+  transform: translateY(-6px);
+}
+
 .additionally__list {
-  list-style: none;
+  margin: 0 auto;
   padding: 0;
+  padding-top: 40px;
+  display:flex;
+  flex-direction: column;
+  width: 280px;
+  list-style: none;
 }
 
 .additionally__item {
+  padding-bottom: 25px;
   font-size: 16px;
   font-weight: normal;
   line-height: 18px;

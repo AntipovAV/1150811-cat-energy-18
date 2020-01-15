@@ -1,8 +1,8 @@
 .catalog-main {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   width: 320px;
-  margin: 0 auto;
 }
 .catalog-main__title {
   margin: 0;
@@ -13,4 +13,40 @@
   line-height: 60px;
 
   color: #111111;
+}
+
+.catalog-main__products {
+  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .catalog-main {
+    width: 768px;
+  }
+
+  .catalog-main__title  {
+    min-height: 150px;
+  }
+
+  .catalog-main__products {
+    width:768px;
+    min-height: 2300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-main {
+    width: 1440px;
+  }
+  .catalog-main__products {
+    width: 1440px;
+    min-height: 1310px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

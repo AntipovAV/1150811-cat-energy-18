@@ -2,6 +2,7 @@
   display:flex;
   align-items: center;
   justify-content: center;
+  margin: 30px 0;
 }
 
 .promo__background {
@@ -20,4 +21,18 @@
   text-align: center;
   width: 150px;
   color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    min-height: 200px;
+    width: 768px;
+  }
+  .promo__background {
+    background-image: url(../img/gift-photo-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-color: @leaf;
+    width: 708px;
+    height: 200px;
+  }
 }

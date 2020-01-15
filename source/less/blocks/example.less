@@ -1,18 +1,15 @@
 .example {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   width: 320px;
-  margin: 0 auto;
   background-color: @light-gray;
 }
 
-.example__parameters {
-  display: flex;
-  padding: 0 20px;
-}
-
 .example__title {
+  margin: 0;
   padding: 0 20px;
+  padding-top: 17px;
   font-size: 36px;
   line-height: 60px;
   font-weight: normal;
@@ -20,14 +17,37 @@
 }
 
 .example__description {
+  margin: 0;
   padding-left: 20px;
   padding-right: 30px;
+  padding-top: 23px;
   font-family: Arial;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
 
   color: #444444;
+}
+
+.example__parameters {
+  padding: 0 20px;
+  padding-top: 11px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.example__parameters-weight,
+.example__parameters-days {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 122px;
+  height: 54px;
+  border-radius: 3px;
+  border: 1px solid #cdcdcd;
 }
 
 .example__parameters-weight dt,
@@ -38,19 +58,29 @@
 
   color: #111111;
   text-transform: uppercase;
+  transform: translateY(-2px);
 }
 
 .example__parameters-weight dd,
 .example__parameters-days dd {
+  top: 46px;
+  left: -23px;
+  padding: 0 4px;
+  display: inline-block;
+  position: absolute;
+  width: 80px;
   font-family: Arial;
   font-size: 12px;
   font-weight: normal;
   line-height: 12px;
-
+  text-align: center;
   color: #444444;
+  background-color: @light-gray;
+
 }
 
 .example__text {
+  padding-top: 6px;
   font-size: 14px;
   font-weight: normal;
   line-height: 20px;
@@ -59,18 +89,61 @@
   text-transform: uppercase;
 }
 
+.example__image {
+  padding-top: 20px;
+}
+
 .example__toggle {
+  padding-top: 32px;
+  padding-bottom: 36px;
+  width: 196;
   display: flex;
-  padding: 0 20px;
-  justify-content: space-between;
+
+  align-items: center;
 }
 
 .example__past,
 .example__present {
+  display: inline-block;
   font-size: 16px;
   font-weight: normal;
   line-height: 20px;
 
   color: #111111;
   text-transform: uppercase;
+}
+
+.example__past {
+  padding-left: 64px;
+}
+
+.example__switch {
+  position: relative;
+  margin-left: 19px;
+  width: 80px;
+  height: 12px;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+}
+
+.example__slider {
+  display: block;
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: @leaf;
+  transform: translate(3px, 3px);
+
+}
+
+.example__present {
+  padding-left: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    min-height: 1082px;
+    width: 768px;
+  }
 }
