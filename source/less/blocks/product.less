@@ -1,7 +1,9 @@
 .product {
-
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
+  width: 320px;
 
   border: @border;
   border-bottom: none;
@@ -9,12 +11,25 @@
 
 .product__wrapper {
   margin: 0 auto;
+  padding: 0;
   display: flex;
   width: 280px;
 }
 
+.product__image {
+  margin: 0;
+  padding: 0;
+  background-color: blue;
+  display: block;
+  width: 140px;
+  height: 144px;
+}
+
 .product__text {
+  margin: 0;
+  padding: 0;
   padding-top: 22px;
+  background-color: blue;
 }
 
 .product__title {
@@ -25,32 +40,38 @@
   line-height: 20px;
   width: 90px;
   text-transform: uppercase;
+
 }
 
 .product__title a {
+  margin: 0;
+  padding: 0;
   color: #111111;
 }
 
 .poduct__features {
   margin: 0;
+  padding: 0;
   padding-top: 12px;
   display: flex;
   justify-content: space-between;
-  width: 140px;
   flex-wrap: wrap;
+  width: 140px;
   font-family: Arial;
   font-size: 12px;
   font-weight: normal;
   line-height: 16px;
-
   color: #444444;
+
 }
 
 .product__modal-show {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
   display: inline-block;
   vertical-align: middle;
   width: 280px;
-  margin: 0 auto;
   margin-bottom: 25px;
   text-align: center;
   font-size: 16px;

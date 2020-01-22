@@ -9,5 +9,49 @@
 
 .site-list__item a {
   color: #111111;
+}
 
+@media (min-width: @tablet-width) {
+  .site-list__item {
+    padding: 0;
+    display: inline-block;
+    border-bottom: none;
+    line-height: 40px;
+  }
+
+  .site-list__item:first-child {
+    margin-right: 36px;
+    width: 62px;
+  }
+  .site-list__item:nth-child(2) {
+    margin-right: 35px;
+    width: 154px;
+  }
+  .site-list__item:last-child {
+    width: 153px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    padding: 0;
+    display: inline-block;
+    border-bottom: none;
+    line-height: 40px;
+  }
+
+  .site-list__item:first-child {
+    margin-right: 34px;
+    width: 72px;
+  }
+  .site-list__item:nth-child(2) {
+    margin-right: 32px;
+    width: 171px;
+  }
+  .site-list__item:last-child {
+    width: 170px;
+  }
+  .site-list__item a {
+    color: #ffffff;
+  }
 }

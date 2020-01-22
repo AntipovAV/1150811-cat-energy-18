@@ -33,7 +33,6 @@
   display: flex;
   align-items: center;
   width: 320px;
-
 }
 
 .advantages__icon {
@@ -56,8 +55,213 @@
 @media (min-width: @tablet-width) {
   .advantages {
     padding: 0;
-    min-height: 750px;
     width: 768px;
-    background-color: green;
+  }
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+    padding-top: 13px;
+    color: #111111;
+  }
+  .advantages__list {
+    margin: 0;
+    padding: 0;
+    padding-top: 72px;
+    padding-bottom: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 768px;
+  }
+  .advantages__item {
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 354px;
+  }
+  .advantages__icon {
+    background-color: @leaf;
+    background-clip: padding-box;
+    padding: 15px;
+    margin-left: 0px;
+  }
+
+  .advantages__description {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 135px;
+    display: inline-block;
+    width: 254px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #444444;
+  }
+  .advantages__description--healthy::after {
+    content: "1";
+    bottom: 75px;
+    right: 24px;
+    position: absolute;
+    display: inline-block;
+    font-family: "Oswald";
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+  .advantages__description--powder::after {
+    content: "2";
+    bottom: 75px;
+    right: 9px;
+    position: absolute;
+    display: inline-block;
+    font-family: "Oswald";
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+  .advantages__description--dining::after {
+    content: "3";
+    bottom: 75px;
+    right: 7px;
+    position: absolute;
+    display: inline-block;
+    font-family: "Oswald";
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+  .advantages__description--clock::after {
+    content: "4";
+    bottom: 75px;
+    right: 5px;
+    position: absolute;
+    display: inline-block;
+    font-family: "Oswald";
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+  .advantages__description--clock span {
+    display: inline-block;
+    padding-right: 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    padding: 0;
+    width: 1440px;
+    margin-left: 182px;
+  }
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    padding: 0;
+    padding-top: 73px;
+    color: #111111;
+  }
+  .advantages__list {
+    margin: 0;
+    padding: 0;
+    padding-top: 71px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1300px;
+  }
+  .advantages__item {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 325px;
+  }
+  .advantages__icon {
+    margin: 0;
+    padding: 0;
+    background-color: @leaf;
+    background-clip: padding-box;
+    padding: 15px;
+    margin-left: 0px;
+  }
+
+  .advantages__description {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 135px;
+    display: inline-block;
+    width: 254px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #444444;
+  }
+  .advantages__description--healthy::after {
+    content: "1";
+    bottom: 75px;
+    right: 24px;
+    position: absolute;
+    display: inline-block;
+    font-family: "Oswald";
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+  .advantages__description--powder::after {
+    content: "2";
+    bottom: 75px;
+    right: 9px;
+    position: absolute;
+    display: inline-block;
+    font-family: "Oswald";
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+  .advantages__description--dining::after {
+    content: "3";
+    bottom: 75px;
+    right: 7px;
+    position: absolute;
+    display: inline-block;
+    font-family: "Oswald";
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+  .advantages__description--clock::after {
+    content: "4";
+    bottom: 75px;
+    right: 5px;
+    position: absolute;
+    display: inline-block;
+    font-family: "Oswald";
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+  .advantages__description--clock span {
+    display: inline-block;
+    padding-right: 5px;
   }
 }

@@ -14,3 +14,24 @@
   text-transform: uppercase;
   list-style: none;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 516px;
+    font-size: 18px;
+    font-weight: 200;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    margin-right: 110px;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 610px;
+    font-size: 20px;
+    font-weight: 200;
+  }
+}

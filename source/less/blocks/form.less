@@ -38,3 +38,51 @@
   color: #222222;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__submit {
+    bottom: 72px;
+    left: 70px;
+    position: absolute;
+    margin-top: 0px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: normal;
+    width: 283px;
+    align-self: center;
+    line-height: 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: @leaf;
+    border: none;
+    cursor: pointer;
+  }
+
+  .form small {
+    padding-top: 8px;
+    margin-bottom: 92px;
+    margin-right: 175px;
+    display: inline-block;
+    align-self: flex-end;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 16px;
+    color: #444444;
+  }
+
+  .form__parameters {
+    font-size: 16px;
+
+    line-height: 18px;
+
+    color: #222222;
+    text-transform: uppercase;
+  }
+}

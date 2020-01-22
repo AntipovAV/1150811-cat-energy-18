@@ -17,7 +17,35 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
-    min-height: 150px;
     width: 768px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-footer__logo {
+    width: 128px;
+    height: 24px;
+    padding-top: 61px;
+    padding-left: 30px;
+    padding-bottom: 61px;
+    align-self: center;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 1440px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-footer__logo {
+    width: 128px;
+    height: 24px;
+    padding-top: 64px;
+    padding-left: 110px;
+    padding-bottom: 61px;
+    align-self: center;
   }
 }

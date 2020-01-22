@@ -15,12 +15,10 @@
 .intro__image {
   position: absolute;
   top: 166px;
-  margin: 0 auto;
   width: 280px;
   height: 270px;
   background-image: url(../img/index-can-mobile@1x.png);
   background-repeat: no-repeat;
-
 }
 
 .intro__title {
@@ -59,7 +57,104 @@
 
 @media (min-width: @tablet-width) {
   .intro {
+    position: relative;
+    background: none;
     min-height: 840px;
     width: 768px;
+    align-items: flex-start;
+  }
+  .intro__title {
+    margin: 0;
+    padding: 0;
+    padding-top: 54px;
+    padding-left: 117px;
+    display: inline-block;
+    width: 430px;
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: normal;
+    text-align: left;
+  }
+  .intro__text {
+    margin: 0;
+    padding-left: 118px;
+    padding-top: 42px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 100;
+    opacity: 1;
+    color: #000000;
+    text-transform: uppercase;
+  }
+  .intro__link {
+    margin-left: 118px;
+    margin-top: 47px;
+    font-size: 20px;
+    width: 245px;
+    line-height: 52px;
+    z-index: 1;
+  }
+  .intro__image {
+    position: absolute;
+    top: 255px;
+    left: 29px;
+    margin: 0;
+    width: 709px;
+    height: 609px;
+    background-image: url(../img/index-can-tablet@1x.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+    position: relative;
+    background: none;
+    width: 1220px;
+    min-height: 634px;
+    align-items: flex-start;
+  }
+  .intro__title {
+    margin: 0;
+    padding: 0;
+    padding-top: 105px;
+    padding-left: 81px;
+    display: inline-block;
+    width: 430px;
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: normal;
+    text-align: left;
+  }
+  .intro__text {
+    margin: 0;
+    padding-left: 81px;
+    padding-top: 40px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 100;
+    opacity: 1;
+    color: #000000;
+    text-transform: uppercase;
+  }
+  .intro__link {
+    margin-left: 81px;
+    margin-top: 53px;
+    font-size: 20px;
+    width: 245px;
+    line-height: 52px;
+    z-index: 1;
+  }
+  .intro__image {
+    position: absolute;
+    top: 24px;
+    left: 450px;
+    margin: 0;
+    width: 709px;
+    height: 609px;
+    background-image: url(../img/index-can-desktop@1x.png);
+    background-repeat: no-repeat;
   }
 }

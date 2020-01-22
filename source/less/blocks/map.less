@@ -8,8 +8,28 @@
 
 @media (min-width: @tablet-width) {
   .map {
+    position: relative;
     background-image: url(../img/bg-map-tablet@1x.png);
-    min-height: 396px;
     width: 768px;
+    height: 400px;
+  }
+  .map__pin {
+    left: 322px;
+    top: 145px;
+    position: absolute;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    position: relative;
+    background-image: url(../img/bg-map-desktop@1x.png);
+    width: 1440px;
+    height: 400px;
+  }
+  .map__pin {
+    left: 998px;
+    top: 151px;
+    position: absolute;
   }
 }
