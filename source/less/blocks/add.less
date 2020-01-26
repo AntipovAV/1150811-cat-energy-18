@@ -1,21 +1,104 @@
 .add {
   display: flex;
   flex-direction: column;
-  width: 280px;
-  margin: 0 auto;
+  width: 320px;
+}
+
+.add__wrapper {
+  position: relative;
+  display: block;
+  width: 320px;
+}
+
+.add__line {
+  margin-top: 42px;
+  margin-bottom: 41px;
+  width: 100%;
+  display: block;
+  height: 3px;
+  background-color: @leaf;
 }
 
 .add__title {
+  top:9px;
+  position: absolute;
+  display: inline-block;
+  width: 267px;
+  text-align: center;
   font-size: 24px;
   font-weight: normal;
   line-height: 24px;
-
   color: #111111;
+  background-color: #ffffff;
 }
 
 @media (min-width: @tablet-width) {
   .add {
-    min-height: 740px;
     width: 768px;
+  }
+  .add__wrapper {
+    position: relative;
+    display: block;
+    width: 768px;
+    padding-bottom: 50px;
+  }
+
+  .add__line {
+    margin-top: 88px;
+    margin-bottom: 41px;
+    width: 100%;
+    display: block;
+    height: 3px;
+    background-color: @leaf;
+  }
+
+  .add__title {
+    top:36px;
+    left: 28px;
+    position: absolute;
+    display: inline-block;
+    width: 413px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 36px;
+    color: #111111;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .add {
+    padding-top: 9px;
+    position: relative;
+    width: 1045px;
+  }
+  .add__wrapper {
+    position: absolute;
+    display: block;
+    width: 1440px;
+  }
+
+  .add__line {
+    margin-top: 88px;
+    margin-bottom: 0;
+    width: 100%;
+    display: block;
+    height: 3px;
+    background-color: @leaf;
+  }
+
+  .add__title {
+    top:36px;
+    left: 70px;
+    position: absolute;
+    display: inline-block;
+    width: 413px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 36px;
+    color: #111111;
+    background-color: #ffffff;
   }
 }

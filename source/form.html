@@ -2,11 +2,11 @@
 <html lang="ru">
   <head><meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <img class="page-header__image" src="img/index-background-desktop@1x.jpg">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
           <picture>
@@ -19,13 +19,13 @@
       </div>
       <nav class="main-nav">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--color">
               <a  href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--color">
               <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item site-list__item--color site-list__item--active">
               <a>Подбор программы</a>
             </li>
           </ul>
@@ -106,8 +106,10 @@
             </li>
           </ul>
         </div>
+        <div class="form__wrapper">
         <button type="submit" class="form__submit" name="button">Отправить заявку</button>
         <small>* &mdash; Обязательные поля</small>
+        </div>
       </form>
       <section class="contacts contacts--gray">
         <h2 class="visually-hidden">Контакты</h2>
@@ -115,6 +117,11 @@
         <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
       </section>
       <section class="map">
+        <div class="map__contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="map__offer">Приглашаем <br>к сотрудничеству дилеров!</p>
+          <p class="map__text">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
+        </div>
         <img class="map__pin" src="img/map-pin.png">
         <h2 class="visually-hidden">Cat energy на карте</h2>
       </section>

@@ -1,9 +1,22 @@
 .map {
+  position: relative;
   background-image: url(../img/bg-map-mobile@1x.png);
   background-repeat: no-repeat;
   width: 320px;
   height: 362px;
   margin: 0 auto;
+}
+
+.map__contacts {
+  display: none;
+}
+
+.map__pin {
+  left: 128px;
+  top: 139px;
+  position: absolute;
+  width: 64px;
+  height: 52px;
 }
 
 @media (min-width: @tablet-width) {
@@ -16,7 +29,12 @@
   .map__pin {
     left: 322px;
     top: 145px;
+    width: 122px;
+    height: 106px;
     position: absolute;
+  }
+  .map__contacts {
+    display: none;
   }
 }
 
@@ -31,5 +49,47 @@
     left: 998px;
     top: 151px;
     position: absolute;
+  }
+  .map__contacts {
+    bottom: 104px;
+    left: 110px;
+    padding: 0;
+    position: absolute;
+    width: 570px;
+    height: 200px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+  .map__offer {
+    margin-top: 65px;
+    margin-left: 75px;
+    width: 170px;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+  .map__text {
+    margin-top: 63px;
+    margin-right: 74px;
+    width: 170px;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: left;
+
+    color: #444444;
+  }
+  .map__text span {
+    display: inline-block;
+    padding-top: 20px;
+  }
+  .map--margin {
+    margin-top: 11px;
   }
 }
